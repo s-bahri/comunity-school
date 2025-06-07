@@ -1,13 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Domine", serif;
     background-color: #f4f4f4;
     margin: 0;
-    font-family: "Domine", serif;
-    /* padding: 20px; */
 }
 
 .head {
-    color: rgb(90, 90, 90);
+    color: #5a5a5a;
     padding: 20px 0;
     text-align: center;
     border-top: 5px solid #9d6767;
@@ -19,8 +17,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     display: flex;
-    flex-direction: flex;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 .about, p {
@@ -58,18 +55,19 @@ body {
     padding: 10px;
 }
 
-ul> li {
+ul > li {
     line-height: 1.5em;
     list-style-type: square;
     margin: 0 10px;
 }
 
-.about ul> li {
-    list-style-type:lower-alpha;
-}   
+.about ul > li {
+    list-style-type: lower-alpha;
+}
 
- a {
+a {
     color: #9d6767;
+    text-decoration: none;
 }
 
 .navbar ul {
@@ -78,25 +76,27 @@ ul> li {
     justify-content: center;
     align-items: center;
     padding: 0;
+    margin: 0;
 }
 
 .navbar ul li {
-    margin: 5px 0;
+    margin: 5px 0 15px 0;
     list-style: none;
     text-transform: uppercase;
     border: 1px solid #9d6767;
     height: 20px;
     width: 150px;
     padding: 20px;
-    margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.2s, color 0.2s;
 }
 
 .navbar ul li a {
-    text-decoration: none;
     color: #9d6767;
+    text-decoration: none;
+    transition: color 0.2s;
 }
 
 .navbar ul li:hover {
